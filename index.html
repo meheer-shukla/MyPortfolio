@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meheer Shukla | Portfolio</title>
+    <meta name="description"
+        content="Precision in the Shadows. A high-end software developer portfolio blending technical rigor with avant-garde aesthetics.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/geist@1.0.3/dist/fonts/geist-sans/style.css">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Custom Cursor -->
+    <div class="custom-cursor" id="cursor"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <span class="desktop-logo">Meheer<span class="logo-accent">Shukla</span></span>
+                <span class="mobile-logo">M<span class="logo-accent">S</span></span>
+            </a>
+            <div class="nav-links desktop-nav">
+                <a href="#about" class="nav-link label-caps active">About</a>
+                <a href="#projects" class="nav-link label-caps">Work</a>
+                <a href="#skills" class="nav-link label-caps">Skills</a>
+                <a href="#contact" class="nav-link label-caps">Contact</a>
+            </div>
+            <div class="nav-controls" style="display: flex; align-items: center; gap: 16px;">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle Theme">
+                    <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" style="width: 20px; height: 20px;">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                    <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round"
+                        style="width: 20px; height: 20px; display: none;">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                </button>
+                <button class="burger-btn" id="burgerBtn" aria-label="Toggle menu">
+                    <span class="burger-line"></span>
+                    <span class="burger-line"></span>
+                    <span class="burger-line"></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Fullscreen Menu -->
+    <div class="mobile-menu-overlay" id="mobileMenu">
+        <button class="close-menu-btn" id="closeMenuBtn" aria-label="Close menu">
+            <span class="close-line"></span>
+            <span class="close-line"></span>
+        </button>
+        <div class="mobile-nav-links">
+            <a href="#about" class="mobile-link headline-lg">About</a>
+            <a href="#projects" class="mobile-link headline-lg">Work</a>
+            <a href="#skills" class="mobile-link headline-lg">Skills</a>
+            <a href="#contact" class="mobile-link headline-lg">Contact</a>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="about">
+            <div class="container section-padding">
+                <p class="technical-sm accent-color">/* SYSTEM BOOT SEQUENCE INITIATED */</p>
+                <h1 class="display-xl">Precision in the Shadows.</h1>
+                <p class="body-lg muted-text hero-text">
+                    I engineer high-end software solutions, blending technical rigor with avant-garde aesthetics.
+                    Every interaction is intentional, and every line of code is treated as art.
+                </p>
+                <div class="hero-ctas">
+                    <a href="#projects" class="btn btn-primary">View Projects</a>
+                    <a href="#contact" class="btn btn-ghost">Get in Touch</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="projects" id="projects">
+            <div class="container section-padding">
+                <h2 class="headline-lg section-title">Selected Work.</h2>
+                <div class="grid projects-grid">
+                    <!-- Project 1 -->
+                    <div class="card glass-card project-card">
+                        <div class="ambient-glow"></div>
+                        <div class="card-content">
+                            <div class="project-image-placeholder placeholder-1"></div>
+                            <div class="project-meta">
+                                <span class="chip technical-sm">React</span>
+                                <span class="chip technical-sm">Next.js</span>
+                            </div>
+                            <h3 class="headline-md card-title">Coming Soon</h3>
+                            <p class="body-md muted-text">Something amazing coming soon...</p>
+                        </div>
+                    </div>
+                    <!-- Project 2 -->
+                    <div class="card glass-card project-card">
+                        <div class="ambient-glow glow-violet"></div>
+                        <div class="card-content">
+                            <div class="project-image-placeholder placeholder-2"></div>
+                            <div class="project-meta">
+                                <span class="chip technical-sm">Rust</span>
+                                <span class="chip technical-sm">WASM</span>
+                            </div>
+                            <h3 class="headline-md card-title">Coming Soon</h3>
+                            <p class="body-md muted-text">Something amazing coming soon...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="skills" id="skills">
+            <div class="container section-padding">
+                <h2 class="headline-lg section-title">Tech Stack.</h2>
+                <div class="skills-layout">
+
+                    <div class="skill-category">
+                        <h3 class="label-caps muted-text" style="margin-bottom: 12px;">Languages</h3>
+                        <div class="skills-container">
+                            <span class="chip chip-large technical-sm">Python</span>
+                            <span class="chip chip-large technical-sm">Java</span>
+                            <span class="chip chip-large technical-sm">PHP</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3 class="label-caps muted-text" style="margin-bottom: 12px;">Backend</h3>
+                        <div class="skills-container">
+                            <span class="chip chip-large technical-sm">SpringBoot</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3 class="label-caps muted-text" style="margin-bottom: 12px;">GUI</h3>
+                        <div class="skills-container">
+                            <span class="chip chip-large technical-sm">Swing</span>
+                            <span class="chip chip-large technical-sm">Awt</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3 class="label-caps muted-text" style="margin-bottom: 12px;">Database</h3>
+                        <div class="skills-container">
+                            <span class="chip chip-large technical-sm">MySql</span>
+                            <span class="chip chip-large technical-sm">PostgreSql</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3 class="label-caps muted-text" style="margin-bottom: 12px;">ML and AI</h3>
+                        <div class="skills-container">
+                            <span class="chip chip-large technical-sm">Pytorch</span>
+                            <span class="chip chip-large technical-sm">Numpy</span>
+                            <span class="chip chip-large technical-sm">Pandas</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3 class="label-caps muted-text" style="margin-bottom: 12px;">DevOps</h3>
+                        <div class="skills-container">
+                            <span class="chip chip-large technical-sm">Docker</span>
+                            <span class="chip chip-large technical-sm">Kubernetes</span>
+                            <span class="chip chip-large technical-sm">Jira</span>
+                            <span class="chip chip-large technical-sm">Jenkins</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact" id="contact">
+            <div class="container section-padding">
+                <div class="card glass-card contact-card">
+                    <div class="ambient-glow glow-mixed"></div>
+                    <div class="card-content">
+                        <h2 class="headline-lg">Initialize Connection.</h2>
+                        <p class="body-md muted-text">Ready to build something extraordinary? Drop a message and I'll
+                            get back to you shortly.</p>
+                        <form class="contact-form" id="contactForm">
+                            <input type="hidden" name="access_key" value="5e67f003-0fed-4f56-a17b-b2242f8f2a45">
+                            <div class="input-group">
+                                <label for="name" class="label-caps">Name</label>
+                                <input type="text" id="name" name="name" placeholder="John Doe" required>
+                            </div>
+                            <div class="input-group">
+                                <label for="email" class="label-caps">Email</label>
+                                <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                            </div>
+                            <div class="input-group">
+                                <label for="message" class="label-caps">Message</label>
+                                <textarea id="message" name="message" rows="4" placeholder="Your message here..."
+                                    required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block" id="submitBtn">Send
+                                Transmission</button>
+                            <p id="formResult" class="body-md muted-text"
+                                style="display: none; text-align: center; margin-top: 16px;"></p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p class="label-caps muted-text">© 2026 Meheer Shukla. All systems operational.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+
+</html>
