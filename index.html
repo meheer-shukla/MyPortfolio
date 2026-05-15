@@ -38,6 +38,15 @@
                 <a href="#contact" class="nav-link label-caps">Contact</a>
             </div>
             <div class="nav-controls" style="display: flex; align-items: center; gap: 16px;">
+                <a href="assets/Meheer_Shukla_CV.pdf" download class="btn-cv" id="downloadCV" aria-label="Download CV">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" style="width: 16px; height: 16px;">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                        <polyline points="7 10 12 15 17 10"></polyline>
+                        <line x1="12" y1="15" x2="12" y2="3"></line>
+                    </svg>
+                    <span class="btn-cv-text">Download CV</span>
+                </a>
                 <button class="theme-toggle" id="themeToggle" aria-label="Toggle Theme">
                     <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                         stroke-linecap="round" stroke-linejoin="round" style="width: 20px; height: 20px;">
@@ -77,6 +86,15 @@
             <a href="#projects" class="mobile-link headline-lg">Work</a>
             <a href="#skills" class="mobile-link headline-lg">Skills</a>
             <a href="#contact" class="mobile-link headline-lg">Contact</a>
+            <a href="assets/Meheer_Shukla_CV.pdf" download class="mobile-cv-btn">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round" style="width: 18px; height: 18px;">
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                    <polyline points="7 10 12 15 17 10"></polyline>
+                    <line x1="12" y1="15" x2="12" y2="3"></line>
+                </svg>
+                Download CV
+            </a>
         </div>
     </div>
 
@@ -104,31 +122,35 @@
                 <h2 class="headline-lg section-title">Selected Work.</h2>
                 <div class="grid projects-grid">
                     <!-- Project 1 -->
-                    <div class="card glass-card project-card">
-                        <div class="ambient-glow"></div>
-                        <div class="card-content">
-                            <div class="project-image-placeholder placeholder-1"></div>
-                            <div class="project-meta">
-                                <span class="chip technical-sm">React</span>
-                                <span class="chip technical-sm">Next.js</span>
+                    <a href="coming-soon.html" class="project-card-link">
+                        <div class="card glass-card project-card">
+                            <div class="ambient-glow"></div>
+                            <div class="card-content">
+                                <div class="project-image-placeholder placeholder-1"></div>
+                                <div class="project-meta">
+                                    <span class="chip technical-sm">React</span>
+                                    <span class="chip technical-sm">Next.js</span>
+                                </div>
+                                <h3 class="headline-md card-title">Coming Soon</h3>
+                                <p class="body-md muted-text">Something amazing coming soon...</p>
                             </div>
-                            <h3 class="headline-md card-title">Coming Soon</h3>
-                            <p class="body-md muted-text">Something amazing coming soon...</p>
                         </div>
-                    </div>
+                    </a>
                     <!-- Project 2 -->
-                    <div class="card glass-card project-card">
-                        <div class="ambient-glow glow-violet"></div>
-                        <div class="card-content">
-                            <div class="project-image-placeholder placeholder-2"></div>
-                            <div class="project-meta">
-                                <span class="chip technical-sm">Rust</span>
-                                <span class="chip technical-sm">WASM</span>
+                    <a href="coming-soon.html" class="project-card-link">
+                        <div class="card glass-card project-card">
+                            <div class="ambient-glow glow-violet"></div>
+                            <div class="card-content">
+                                <div class="project-image-placeholder placeholder-2"></div>
+                                <div class="project-meta">
+                                    <span class="chip technical-sm">Rust</span>
+                                    <span class="chip technical-sm">WASM</span>
+                                </div>
+                                <h3 class="headline-md card-title">Coming Soon</h3>
+                                <p class="body-md muted-text">Something amazing coming soon...</p>
                             </div>
-                            <h3 class="headline-md card-title">Coming Soon</h3>
-                            <p class="body-md muted-text">Something amazing coming soon...</p>
                         </div>
-                    </div>
+                    </a>
                 </div>
             </div>
         </section>
